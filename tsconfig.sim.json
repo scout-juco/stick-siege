@@ -1,0 +1,9 @@
+{
+  // Typechecks the pure layers with no DOM lib, so any DOM/window/canvas use in src/sim or src/data fails.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2023"],
+    "types": []
+  },
+  "include": ["src/sim", "src/data"]
+}

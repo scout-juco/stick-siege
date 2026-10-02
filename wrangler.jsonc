@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Static-assets-only Worker: serves the Vite build (dist/) from Cloudflare's edge.
+  // Deploy with `npm run deploy` (builds first). The page is designed to be iframed into another site.
+  "name": "stick-siege",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist"
+  }
+}
